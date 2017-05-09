@@ -80,14 +80,8 @@
     // Компаратор для сортировки.
     Control.prototype.comparator = function () {
         return function (a, b) {
-            var result;
-            if (typeof a[control.sortedField] === "string") {
-                result = (a[control.sortedField].length > b[control.sortedField].length) ? 1 :
-                    (a[control.sortedField].length == b[control.sortedField].length) ? 0 : -1;
-            } else {
-                result = (a[control.sortedField] > b[control.sortedField]) ? 1 :
+            var result = (a[control.sortedField] > b[control.sortedField]) ? 1 :
                     (a[control.sortedField] == b[control.sortedField]) ? 0 : -1;
-            }
 
             return (control.radioButtonOrder == 1) ? result : -result;
         };

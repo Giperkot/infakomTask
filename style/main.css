@@ -45,10 +45,15 @@
     margin-bottom: 30px;
 }
 
-.radio-buttons {
-
+.data_table {
+    width: 100%;
+    font-size: 17px;
 }
 
-.radio-buttons div {
+.data_table tr{
+    height: 20px;
+}
 
+.data_table tr:nth-child(2n) {
+    background: #fffa5f;
 }
